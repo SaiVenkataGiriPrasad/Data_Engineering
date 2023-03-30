@@ -20,7 +20,9 @@
 -- switching to the main branch.
 
 ** basic.ipynb 
+
 In basic.ipynb file, it includes basic shell commands for the beginners.
 
 ** draw_pipe_line.drawio.svg 
+
 It represents the pictorial representation of the data piple or the process
