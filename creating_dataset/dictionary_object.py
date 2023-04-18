@@ -4,15 +4,18 @@ names = ['SAI', 'UDAY', 'BHARATH', 'RISHIKA', 'LAHARI', 'PRAVALLIKA', 'RAMYA', '
 
 
 def create_dataset():
+    """ This function is used to create the dataset of 5000000 rows
+      with the names that have listed"""
     file_c = open('generate_dataset.txt', 'w', encoding = 'UTF-8')
     create_rows = 5000000 # Number of rows creating in a file
-    for line in range(create_rows):
+    for _ in range(create_rows):
         generate_data = random.choice(names)
         file_c.write(generate_data + '\n')
     file_c.close()
 
 
 def read_dataset_list():
+    ''' This funtion is defined to read the dataset and to count the number of repetitions of the names'''
     names_count_list = []
     for name in names: #append the list with zero, referencing with indexes of names.
         names_count_list.append(0)
@@ -25,6 +28,7 @@ def read_dataset_list():
 
 
 def read_dataset_dict():
+    ''' This function is defined to read the dataset and to count the number of repetitions of the names'''
     names_count_dict = {}
     for name in names:
         names_count_dict[name] = 0 # Mapping value(zero) with key(name)
